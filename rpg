@@ -97,18 +97,18 @@ local Tool = script.Parent
 local Settings = {
 	Range = 1000
 	,Spread = 3
-	,BlastRadius = 10
-	,Damage = {20, 45}
-	,HeadShotDamage = {70, 120}
+	,BlastRadius = 0
+	,Damage = {0, 0}
+	,HeadShotDamage = {0, 0}
 	,Bullets = 1
 	,FireRate = 0
-	,Automatic = false
+	,Automatic = true
 	,AntiTK = false
 	,ImpactDuration = 3
 	--Reload
 	,ReloadKey = "R"
-	,ReloadTime = 2.5
-	,Ammo = 1
+	,ReloadTime = 0.1
+	,Ammo = 5
 	,IncludeChamberedBullet = false
 	--Gui
 	,GuiPos = Vector2.new(script.Gui.Frame.Position.X.Scale, script.Gui.Frame.Position.Y.Scale)
@@ -142,7 +142,7 @@ local Settings = {
 	}
 	,FireMouseAnimTime = 0.15
 	--Recoil
-	,Recoil = math.rad(15)
+	,Recoil = math.rad(10)
 	--Smoke
 	,Smoke = true
 	,SmokePart = Tool.SmokePart
